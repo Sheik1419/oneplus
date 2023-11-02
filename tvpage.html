@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV & Display | OnePlus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: default;
+        }
+
+        /* section 1 */
+        #nav1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        #nav1 p {
+            font-size: 15px;
+        }
+
+        #nav1 a{
+            font-size: 15px;
+            margin-top: 14px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #dv1 {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin-left: 30px;
+        }
+
+        #dv2 {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin-right: 30px;
+        }
+
+        #im1 {
+            width: 100%;
+            height: 50px;
+            margin-top: -18px;
+        }
+
+        #nav1 p:hover {
+            text-decoration: underline red;
+            cursor: pointer;
+        }
+
+        #nav1 a:hover {
+            text-decoration: underline red;
+            cursor: pointer;
+        }
+
+        #dv2 .fa {
+            padding-top: 16px;
+        }
+
+
+        /* section 2 */
+        #dv3 {
+            display: flex;
+            margin: 0px 60px;
+        }
+
+        #dv3 img {
+            padding: 0px 40px;
+        }
+
+        #dv0 {
+            display: flex;
+        }
+
+        #dv0 a{
+            text-decoration: none;
+            color: black;
+        }
+        #dv3 img:hover {
+            text-decoration: underline red;
+            cursor: pointer;
+        }
+
+        #dv0 a:hover {
+            text-decoration: underline red;
+            cursor: pointer;
+        }
+
+        .cs2 {
+            font-size: 15px;
+            margin-left: 110px;
+        }
+
+        /* section 3 */
+        #sec3 {
+            display: flex;
+        }
+
+        #dv4 {
+            margin: 50px 80px;
+            font-size: 14px;
+        }
+
+        #dv4 p {
+            font-size: 16px;
+        }
+
+        #chat {
+            position: fixed;
+            top: 500px;
+            left: 30px;
+            background-color: white;
+            border-radius: 50%;
+            height: 25px;
+            box-shadow: 2px 0px 10px 1px;
+            z-index: 1;
+        }
+
+        #chat,
+        .fa:hover {
+            cursor: pointer;
+        }
+
+        /* section 4 */
+        #sec4 {
+            margin-left: 50px;
+        }
+
+        #sec4 .div1,
+        .div2,
+        .div3,
+        .div4 {
+            display: flex;
+        }
+
+        #sec4 #para2 {
+            margin: 40px 50px;
+            font-size: 13px;
+            color: grey;
+        }
+
+        #sec4:hover{
+            cursor: pointer;
+        }
+        /* section 5 */
+        #sec5 {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 700px;
+            margin-top: 50px;
+        }
+
+        #sec5 #dv5 {
+            margin-left: 150px;
+        }
+
+        #ft1 p {
+            font-size: 12px;
+            color: grey;
+        }
+
+        #ft1 p:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        #ft1 hr {
+            width: 80%;
+            margin-left: 130px;
+        }
+
+        #dv5 p {
+            padding-top: 50px;
+        }
+
+        #dv6 {
+            display: flex;
+            padding-top: 50px;
+        }
+
+        #dv6 div {
+            padding-left: 150px;
+        }
+
+        #dv7 {
+            display: flex;
+        }
+
+        #dv7 p {
+            font-size: 12px;
+            margin-top: 50px;
+        }
+
+        #dv7 #sc11 hr {
+            margin-left: 75px;
+            width: 90%;
+        }
+
+        #dv7 #para3 {
+            margin-left: 100px;
+        }
+
+        #dv7 #para4 {
+            margin-left: 350px;
+        }
+
+        #dv7 #para3 span {
+            padding-left: 50px;
+        }
+
+        #dv8 {
+            display: flex;
+            margin-left: 150px;
+        }
+
+        #dv8 p {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px 15px;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        /* span */
+        #span1 {
+            font-size: 15px;
+            color: black;
+        }
+
+        .span2 {
+            font-size: 13px;
+            margin-left: 42px;
+        }
+
+        .span2:hover {
+            cursor: pointer;
+            border: 1px solid;
+            border: none;
+            padding: 3% 30%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            transition: 300ms;
+        }
+
+        .span3 {
+            color: black;
+        }
+
+        .span3:hover {
+            cursor: pointer;
+        }
+
+        .span4 {
+            font-size: 12px;
+            margin-left: 42px;
+            color: red;
+        }
+
+        .span5 i {
+            padding-left: 50px;
+        }
+
+        .span6 i {
+            padding-left: 50px;
+        }
+
+        .span7 {
+            font-size: 13px;
+            margin-top: 17px;
+            color: grey;
+        }
+
+        .span7:hover {
+            cursor: pointer;
+            color: white;
+        }
+
+        .span8 {
+            font-size: 13px;
+            margin-top: 17px;
+            color: grey;
+            margin-left: 150px;
+        }
+
+        .span8:hover {
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="sec1">
+        <nav id="nav1">
+            <div id="dv1">
+                <a href="index.html"><img src="oneplus.png" alt="" id="im1"></a>
+                <a href="phnpage.html">Phone</a>
+                <a href="tvpage.html">TV & Display</a>
+                <p><a href="">Audio & Watch</a></p>
+                <p><a href="">Tablet</a></p>
+                <p><a href="">Accessories</a></p>
+                <p><a href="">Offers</a></p>
+            </div>
+            <div id="dv2">
+                <p><a href="">Store</a></p>
+                <p><a href="">Onetopia</a></p>
+                <p><a href="">OneplusFeaturing</a></p>
+                <p><a href="">Community</a></p>
+                <p><a href="">Support</a></p>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+        </nav>
+    </section>
+    <hr>
+
+    <section id="sec2">
+        <div id="dv3">
+            <img src="phnimg/all.svg" alt="">
+            <img src="phnimg/mobile.svg" alt="">
+            <img src="phnimg/tablet.svg" alt="">
+            <img src="phnimg/tv.svg" alt="">
+            <img src="phnimg/audio.svg" alt="">
+            <img src="phnimg/wearables.svg" alt="">
+            <img src="phnimg/case.svg" alt="">
+            <img src="phnimg/bundles.svg" alt="">
+            <img src="phnimg/cables.svg" alt="">
+            <img src="phnimg/gear.svg" alt="">
+        </div>
+
+        <div id="dv0">
+            <p class="cs2">All</p>
+            <p class="cs2" style="margin-left: 110px;"><a href="phnpage.html">Mobiles</a></p>
+            <p class="cs2" style="margin-left: 85px;"><a href="">Tablets</a></p>
+            <p class="cs2" style="margin-left: 75px;"><a href="tvpage.html">TV & Display</a></p>
+            <p class="cs2" style="margin-left: 70px;"><a href="">Audio</a></p>
+            <p class="cs2" style="margin-left: 80px;"><a href="">Wearables</a></p>
+            <p class="cs2" style="margin-left: 50px;"><a href="">Case & Protection</a></p>
+            <p class="cs2" style="margin-left: 40px;"><a href="">Bundles</a></p>
+            <p class="cs2" style="margin-left: 85px;"><a href="">Cables</a></p>
+            <p class="cs2" style="margin-left: 90px;"><a href="">Gears</a></p>
+        </div>
+    </section>
+    <hr>
+
+    <section id="sect1" style="display: flex;">
+        <aside>
+            <section id="sec3">
+                <div id="dv4">
+                    <p>Offers</p>
+                    <input type="checkbox" id="" class="cs1">On Sale<br>
+                    <input type="checkbox" id="" class="cs1">Save with RedCoins
+                    <br><br>
+
+                    <p>Availability</p>
+                    <input type="checkbox" id="" class="cs1">In Stock</sup><br>
+                    <br><br>
+
+                    <p>Price Range</p>
+                    <p>₹0-₹99,999</p>
+                    <input type="range" value="0">
+                    <br><br>
+
+                    <p>Screen Size</p>
+                    <input type="checkbox" id="" class="cs1">60.96cm (24")<br>
+                    <input type="checkbox" id="" class="cs1">68.58cm (27")<br>
+                    <input type="checkbox" id="" class="cs1">80cm (32")<br>
+                    <input type="checkbox" id="" class="cs1">1.08m (43")<br>
+                    <input type="checkbox" id="" class="cs1">1.26m (50")<br>
+                    <input type="checkbox" id="" class="cs1">1.39m (55")<br>
+                    <input type="checkbox" id="" class="cs1">1.64m (65")
+                    <br><br>
+
+                    <p>Resolution</p>
+                    <input type="checkbox" id="" class="cs1">Full HD, 1920 x 1080 <br>
+                    <input type="checkbox" id="" class="cs1">HD Ready, 1366 x 768 <br>
+                    <input type="checkbox" id="" class="cs1">Ultra HD (4K), 3840 x 2160
+                    <br><br>
+
+                    <p>Categories</p>
+                    <input type="checkbox" id="" class="cs1">TV <br>
+                    <input type="checkbox" id="" class="cs1">Monitors
+                    <br><br>
+
+                    <p>Screen Type</p>
+                    <input type="checkbox" id="" class="cs1">LED <br>
+                    <input type="checkbox" id="" class="cs1">QLED <br>
+                    <br><br>
+
+                    <p>Number Of HDMI Ports</p>
+                    <input type="checkbox" id="" class="cs1">2 <br>
+                    <input type="checkbox" id="" class="cs1">3 <br>
+                    <input type="checkbox" id="" class="cs1">4
+                    <br><br>
+
+                    <p>Refresh Rate</p>
+                    <input type="checkbox" id="" class="cs1">60Hz <br>
+                    <input type="checkbox" id="" class="cs1">120Hz
+                    <br><br>
+                </div>
+                <img src="img/cht.svg" alt="" id="chat">
+            </section>
+        </aside>
+
+        <section id="sec4">
+            <p id="para2">Rank By <span class="span3">Recommended <i class="fa fa-angle-down"aria-hidden="true"></i></span>
+            </p>
+
+            <div class="div1">
+                <p><img src="tvimg/1.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV 43 | 50 | 55 Y1S Pro</span><br>
+                    <span class="span4">Upto 30% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹39,999</span>
+                </p>
+                <p><img src="tvimg/2.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus Y Series TV 32 | 40 | 43 Y1</span><br>
+                    <span class="span4">Upto 34% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹26,999</span>
+                </p>
+                <p><img src="tvimg/3.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV U Series 50 | 55 | 65
+                        U1S</span><br>
+                    <span class="span4">Upto 31% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹33,999</span>
+                </p>
+            </div>
+
+            <div class="div2">
+                <p><img src="tvimg/4.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV Y Series 32 | 40 | 43
+                        Y1S</span><br>
+                    <span class="span4">Upto 43% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹56,999</span>
+                </p>
+                <p><img src="tvimg/5.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus Monitor E 24</span><br>
+                    <span class="span4">40% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹19,999</span>
+                </p>
+                <p><img src="tvimg/6.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV Q Series 65 Q2 Pro</span><br>
+                    <span class="span4">40% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹39,999</span>
+                </p>
+            </div>
+
+            <div class="div3">
+                <p><img src="tvimg/7.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV Q1 Series</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹17,999</span>
+                </p>
+                <p><img src="tvimg/8.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus Monitor X 27</span><br>
+                    <span class="span4">30% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹52,999</span>
+                </p>
+                <p><img src="tvimg/9.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV Y Series 32 | 43 Y1S
+                        Edge</span><br>
+                    <span class="span4">Upto 45% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹37,999</span>
+                </p>
+            </div>
+
+            <div class="div4">
+                <p><img src="tvimg/10.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV Camera</span><br>
+                    <span class="span4">28% OFF</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹39,999</span>
+                </p>
+                <p><img src="tvimg/11.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV 55Q1 Table-top Stand</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹39,999</span>
+                </p>
+                <p><img src="tvimg/12.png" height="350px"><br>
+                    <span style="margin-left: 40px; font-size: 17px;">OnePlus TV 55Q1 Table-top Stand</span><br><br>
+                    <span class="span2"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ₹39,999</span>
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <section id="sec5">
+        <div id="dv5">
+            <p>Home > Store > Phone</p>
+        </div>
+
+        <footer id="ft1">
+            <div id="dv6">
+                <div id="div6">
+                    <h5>Phones</h5>
+                    <p>OnePlus 11 5G</p>
+                    <p>OnePlus 11R 5G</p>
+                    <p>OnePlus Nord 3 5G</p>
+                    <p>OnePlus Nord CE3 5G</p>
+                    <p>OnePlus Nord CE 3 Lite 5G</p>
+                    <p>OnePlus 10R 5G</p>
+                    <p>OnePlus 10R Pro 5G</p>
+                    <p>OnePlus Nord 2T 5G</p>
+                    <p>OnePlus Nord CE 2 Lite 5G</p>
+                    <p>OnePlus 10T 5G</p>
+                    <p>OnePlus 9 5G</p>
+                    <p>OnePlus 9R 5G</p>
+                </div>
+
+                <div id="div7">
+                    <h5>Store</h5>
+                    <p>Tablet</p>
+                    <p>TV & Display</p>
+                    <p>Audio</p>
+                    <p>Wearables</p>
+                    <p>Cases & Protection</p>
+                    <p>Power & Cables</p>
+                    <p>Bundles</p>
+                    <p>Gear</p>
+                </div>
+
+                <div id="div8">
+                    <h5>Support</h5>
+                    <p>Protection Plan</p>
+                    <p>Shopping FAQs</p>
+                    <p>User Manuals</p>
+                    <p>Service Centers</p>
+                    <p>Affliate Program</p>
+                    <p>Repair Service</p>
+                    <p>Repair Pricing</p>
+                    <p>TV Spare Part Price</p>
+                    <p>Software Update</p>
+                </div>
+
+                <div id="div9">
+                    <h5>Explore</h5>
+                    <p>About OnePlus</p>
+                    <p>Community</p>
+                    <p>Find a Store</p>
+                    <p>OnePlus Store App</p>
+                    <p>OxygenOS</p>
+                    <p>Press</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                    <p>Campus Opportunities</p>
+                </div>
+
+                <div id="div10">
+                    <h5>Programs</h5>
+                    <p>Exchange Program</p>
+                    <p>Red Cable Club</p>
+                </div>
+            </div>
+
+            <div id="dv7">
+                <p id="para3">
+                    <span><i class="fa fa-credit-card" aria-hidden="true"> Credit/Debit Card</i></span>
+                    <span><i class="fa fa-university" aria-hidden="true"> NetBanking</i></span>
+                    <span><i class="fa fa-pie-chart" aria-hidden="true"> EMI</i></span>
+                    <span><i class="fa fa-google-wallet" aria-hidden="true"> Wallet</i></span>
+                </p>
+
+                <p id="para4">
+                    <span class="span6" style="font-size: 15px;">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i> |
+                        <p style="font-size: 15px;"> Get Support From OnePlus <i class="fa fa-angle-down"
+                                aria-hidden="true"></i></p>
+                    </span>
+                </p>
+            </div>
+            <hr>
+
+            <div id="dv8">
+                <p>Privacy Policy</p>
+                <p>User Agreement</p>
+                <p>Terms of Sales</p>
+                <p>E-Waste Management</p>
+                <p>Security Feedback</p>
+                <span class="span7">© 2013 - 2023 OnePlus. All Rights Reserved. <img src="img/pr.png" alt=""
+                        height="15px" style="padding-left: 10px;"></span>
+                <span class="span8">India (English) <i class="fa fa-globe" aria-hidden="true"></i></span>
+            </div>
+    </section>
+
+</body>
+
+</html>

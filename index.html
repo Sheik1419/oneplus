@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePlus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: default;
+        }
+
+        /* nav */
+        #n1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        #n2 {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* section */
+        #sc3 {
+            display: flex;
+        }
+
+        #sc6 {
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+
+        #sc7 {
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+            width: 100%;
+            height: 4500px;
+        }
+
+        #sc8 {
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+
+        #sc9 {
+            margin-top: 80px;
+            display: flex;
+            margin-left: 70px;
+        }
+
+        #sc11 {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 1150px;
+            margin-top: 50px;
+        }
+
+        /* div */
+        #d1 {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin-left: 30px;
+        }
+
+        #d2 {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin-right: 30px;
+        }
+
+        .d6 {
+            display: flex;
+            margin-top: 70px;
+        }
+
+        .d7 {
+            display: flex;
+            margin-top: 50px;
+            margin-left: 0px;
+        }
+
+        #d8 {
+            display: flex;
+            margin: 60px 0px 0px 110px;
+        }
+
+        #d9 {
+            width: 50%;
+            display: flex;
+            margin-left: 50px;
+        }
+
+        #d10 {
+            display: flex;
+            margin-left: 80px;
+        }
+
+        #d11 {
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+
+        .d12 {
+            display: flex;
+            margin-left: 80px;
+            margin-top: 40px;
+        }
+
+        .d13 {
+            display: flex;
+            margin-top: 80px;
+            margin-left: 80px;
+        }
+
+        #sc10 .d13 {
+            margin-top: 0px;
+        }
+
+        #sc10 #d16 {
+            display: flex;
+            margin-left: 100px;
+        }
+
+        #d26 {
+            display: flex;
+            margin-left: 150px;
+        }
+
+        #d18 {
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+
+        #d19 {
+            margin-top: -305px;
+            margin-left: 750px;
+        }
+
+        .d13 #div1 {
+            display: flex;
+            height: 400px;
+        }
+
+        .d13 #div2 {
+            display: flex;
+            height: 400px;
+            margin-left: -250px;
+        }
+
+        .d13 #div3 {
+            display: flex;
+            height: 400px;
+        }
+
+        .d13 #div4 {
+            display: flex;
+            height: 400px;
+        }
+
+        #ft1 #div5 {
+            display: flex;
+            padding-top: 100px;
+        }
+
+        #div5 div {
+            padding-left: 150px;
+        }
+
+        #d25 {
+            display: flex;
+        }
+
+        /* img */
+        #img1 {
+            width: 100%;
+            height: 50px;
+            margin-top: -18px;
+        }
+
+        #img2 {
+            width: 100%;
+            height: 600px;
+        }
+
+        #img3 {
+            width: 60%;
+            height: 450px;
+        }
+
+        #img4 {
+            height: 450px;
+            width: 50%;
+            margin-top: 50px;
+        }
+
+        #img5 {
+            height: 450px;
+            width: 60%;
+        }
+
+        #img6 {
+            height: 500px;
+            width: 70%;
+            margin-right: 60px;
+        }
+
+        #img7 {
+            width: 70%;
+            height: 450px;
+            margin-right: 70px;
+        }
+
+        .img8 {
+            width: 95%;
+            height: 280px;
+        }
+
+        #img9 {
+            width: 45%;
+            height: 300px;
+        }
+
+        #img10 {
+            width: 90%;
+            height: 300px;
+        }
+
+        #cht {
+            position: fixed;
+            top: 500px;
+            left: 30px;
+            background-color: white;
+            border-radius: 50%;
+            height: 35px;
+            z-index: 1;
+        }
+
+        .ii1 {
+            width: 100%;
+            height: 350px;
+            margin-top: 30px;
+        }
+
+        /* para */
+        #n1 p {
+            font-size: 15px;
+        }
+
+        #n1 a {
+            font-size: 15px;
+            margin-top: 14px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #ft1 p {
+            font-size: 12px;
+            color: grey;
+        }
+
+        #d4 p {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            font-size: 15px;
+            font: lighter;
+        }
+
+        .d6 p {
+            width: 90%;
+            margin-left: 80px;
+            font-size: 40px;
+        }
+
+        #d8 p {
+            font-size: 30px;
+        }
+
+        #d9 p {
+            font-size: 30px;
+        }
+
+        #d10 p {
+            width: 40%;
+            font-size: 25px;
+            margin-top: 50px;
+
+        }
+
+        .d12 p {
+            width: 35%;
+            margin-left: 20px;
+        }
+
+        .d15 p {
+            font-size: 30px;
+            padding: 0px 20px;
+        }
+
+        #d17 p {
+            margin-left: 80px;
+            padding-top: 80px;
+            font-size: 18px;
+            color: rgb(106, 106, 106);
+        }
+
+        #sc6 p {
+            font-size: 20px;
+            color: rgb(83, 82, 82);
+        }
+
+        #n2 p {
+            font-size: 17px;
+            color: black;
+            margin-left: -40px;
+        }
+
+        #sc6 #n2 a{
+            color: black;
+            text-decoration: none;
+        }
+
+        #sc6 #p1 {
+            text-align: center;
+            font-size: 13px;
+            color: black;
+        }
+
+        #sc10 #para2 {
+            margin-left: 80px;
+            font-size: 20px;
+            color: rgb(109, 109, 109);
+        }
+
+        #sc10 hr {
+            color: grey;
+            margin-left: 80px;
+            width: 90%;
+        }
+
+        #sc10 #d16 p {
+            color: rgb(112, 112, 112);
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 15px 100px;
+            border-left: none;
+            border-right: none;
+        }
+
+        #d26 p {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px 15px;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .d13 #div1 p {
+            width: 30%;
+            font-size: 15px;
+            background-color: rgb(46, 46, 46);
+            padding: 20px;
+        }
+
+        .d13 #div2 p {
+            width: 40%;
+            font-size: 15px;
+            background-color: rgb(46, 46, 46);
+            padding: 20px;
+        }
+
+        .d13 #div3 p {
+            width: 45%;
+            font-size: 15px;
+            background-color: rgb(249, 246, 246);
+            padding: 15px;
+
+        }
+
+        .d13 #div4 p {
+            width: 45%;
+            font-size: 15px;
+            background-color: rgb(249, 246, 246);
+            padding: 15px;
+        }
+
+        #d18 p {
+            width: 30%;
+            position: absolute;
+            top: 8350px;
+            left: 100px;
+        }
+
+        #d19 p {
+            width: 22%;
+            position: absolute;
+            top: 8340px;
+            left: 780px;
+        }
+
+        #d25 p {
+            font-size: 12px;
+            margin-top: 50px;
+        }
+
+        #d25 #sc11 hr {
+            margin-left: 75px;
+            width: 90%;
+        }
+
+        #d25 #para3 {
+            margin-left: 100px;
+        }
+
+        #d25 #para3 span {
+            padding-left: 50px;
+        }
+
+        #d25 #para4 {
+            margin-left: 350px;
+        }
+
+        hr {
+            margin-left: 0px;
+            width: 95%;
+        }
+
+        #sc11 hr {
+            margin-left: 80px;
+            width: 90%;
+        }
+
+        #ft1 hr {
+            width: 80%;
+            margin-left: 130px;
+        }
+
+        /* span */
+        #sp1 {
+            font-size: 37px;
+        }
+
+        .sp2 {
+            font-size: 15px;
+        }
+
+        .sp3 {
+            font-size: 20px;
+        }
+
+        .sp4 {
+            font-size: 40px;
+        }
+
+        .sp5 {
+            font-size: 50px;
+        }
+
+        .sp6 {
+            font-size: 50px;
+            color: red;
+        }
+
+        .span1 {
+            font-size: 25px;
+            color: grey;
+        }
+
+        .span2 {
+            font-size: 30px;
+        }
+
+        .span3 {
+            text-decoration: underline;
+        }
+
+        .span4 {
+            text-decoration: underline;
+            font-size: 15px;
+        }
+
+        .span5 i {
+            padding-left: 50px;
+        }
+
+        .span6 i {
+            padding-left: 50px;
+        }
+
+        .span7 {
+            font-size: 13px;
+            margin-top: 17px;
+            color: grey;
+        }
+
+        .span8 {
+            font-size: 13px;
+            margin-top: 17px;
+            color: grey;
+            margin-left: 150px;
+        }
+
+        #d25 {
+            margin-top: 50px;
+            display: flex;
+        }
+
+        #para5 {
+            display: flex;
+            margin-left: 120px;
+        }
+
+        #para5 p {
+            padding-left: 30px;
+        }
+
+        #para6 {
+            display: flex;
+            margin-left: 450px;
+        }
+
+        #para6 p {
+            padding-left: 40px;
+        }
+
+        /* hover & fafa */
+        button,
+        #cht,
+        .fa:hover {
+            cursor: pointer;
+        }
+
+        #n1 p:hover {
+            text-decoration: underline red;
+            cursor: pointer;
+        }
+
+        #n1 a:hover {
+            text-decoration: underline red;
+            cursor: pointer;
+        }
+
+        #n2 p:hover {
+            text-decoration: underline red;
+        }
+
+        #n2 a:hover{
+            cursor: pointer;
+        }
+        #ft1 p:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        #d2 .fa {
+            padding-top: 16px;
+        }
+
+        #bt1:hover {
+            background-color: white;
+            color: black;
+            border: none;
+            transition: 1s;
+        }
+
+        .bt2:hover {
+            background-color: black;
+            color: white;
+            border: none;
+            transition: 1s;
+        }
+
+        .bt3:hover {
+            background-color: black;
+            color: white;
+            border: none;
+            transition: 1s;
+        }
+
+        .bt4:hover {
+            background-color: red;
+            color: white;
+            border: none;
+            transition: 1s;
+        }
+
+        .bt5:hover {
+            background-color: red;
+            color: white;
+            border: none;
+            transition: 1s;
+
+        }
+
+        #sc6 #p1 {
+            cursor: pointer;
+        }
+
+        .span3:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .span4:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .span7:hover {
+            cursor: pointer;
+            color: white;
+        }
+
+        .span8:hover {
+            cursor: pointer;
+            color: white;
+        }
+
+        .fa1:hover {
+            translate: 10px 0px;
+            transition: 500ms;
+        }
+
+        /* button */
+        #bt1 {
+            margin-left: -50px;
+            height: 40px;
+            width: 120px;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+        }
+
+        #d5 #bt1 {
+            position: absolute;
+            top: 550px;
+            left: 100px;
+        }
+
+        .bt2 {
+            height: 40px;
+            width: 150px;
+            font-size: 15px;
+            background-color: white;
+            color: black;
+        }
+
+        .bt3 {
+            height: 40px;
+            width: 130px;
+            font-size: 15px;
+            background-color: white;
+            color: black;
+        }
+
+        .bt4 {
+            height: 40px;
+            width: 180px;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .bt5 {
+            height: 40px;
+            width: 200px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav & section 1 -->
+    <section id="sc1">
+        <nav id="n1">
+            <div id="d1">
+                <p><a href="index.html"><img src="oneplus.png" alt="" id="img1"></a></p>
+                <p><a href="phnpage.html">Phone</a></p>
+                <p><a href="tvpage.html">TV & Display</a></p>
+                <p><a href="">Audio & Watch</a></p>
+                <p><a href="">Tablet</a></p>
+                <p><a href="">Accessories</a></p>
+                <p><a href="">Offers</a></p>
+            </div>
+            <div id="d2">
+                <p>Store</p>
+                <p>Onetopia</p>
+                <p>OneplusFeaturing</p>
+                <p>Community</p>
+                <p>Support</p>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+        </nav>
+    </section>
+
+    <!-- section 2 -->
+    <section id="sc2">
+        <div id="d3">
+            <img src="img/10001.jpg" alt="" id="img2">
+        </div>
+        <div id="d4">
+            <p>With those who matter <br> <span id="sp1">#One Celebration</span></p>
+        </div>
+        <div id="d5">
+            <img src="img/cht.svg" alt="" id="cht">
+            <button type="submit" id="bt1"><b>Notify Me</b></button>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section id="sc3">
+        <div class="d6">
+            <p><b>OnePlus 11</b><sup>5G</sup><br><br><br><br><br>
+                <span class="sp2">Save additional up to ₹6 000 with exchange bonus on select devices.</span><br>
+                <span class="sp3">From ₹54 999* Incl. bank discount</span><br>
+                <button type="submit" class="bt2">Buy Now</button>
+                <button type="submit" class="bt2">Learn More</button>
+            </p>
+
+            <img src="img/10002.jpg" alt="" id="img3">
+        </div>
+
+    </section>
+
+    <!-- section 4 -->
+    <section id="sc4">
+        <div id="d8">
+            <div>
+                <p><b>OnePlus Nord 3</b><sup>5G</sup><br><br><br><br><br><br>
+                    <span class="sp2">Add Nord Buds 2 at just ₹2 199.</span><br>
+                    <span class="sp3">From ₹31 999* Incl. Bank Discount</span>
+                </p>
+                <button type="submit" class="bt3">Buy Now</button>
+                <button type="submit" class="bt3">Learn More</button>
+            </div>
+            <div>
+                <img src="img/10003.png" alt="" class="ii1">
+            </div>
+
+            <div id="d9">
+                <div>
+                    <p><b>OnePlus Buds Pro 2</b><br><br><br><br><br>
+                        <span class="sp2">Save extra ₹500 by using the RCC linked device benefit</span><br>
+                        <span class="sp3">At ₹11 999</span>
+                    </p>
+                    <button type="submit" class="bt3">Buy Now</button>
+                    <button type="submit" class="bt3">Learn More</button>
+                </div>
+                <div>
+                    <img src="img/10004.png" alt="" class="ii1">
+                </div>
+            </div>
+    </section>
+
+    <!-- section 6 -->
+    <section id="sc6">
+        <p>This Week's Hot Picks</p>
+        <hr>
+        <nav id="n2">
+            <p><a href="#">Highlights</a></p>
+            <p><a href="phnpage.html">Phones</a></p>
+            <p><a href="tvpage.html">TV & Display</a></p>
+            <p><a href="">Audio</a></p>
+            <p><a href="">Audio</a></p>
+            <p><a href="">Accessories</a></p>
+        </nav>
+        <p id="p1">View all products ></p>
+    </section>
+
+    <!-- section 7 -->
+    <section id="sc7">
+        <div id="d10">
+            <p>One For All <br><span class="sp4">OnePlus Ensemble</span> <br><br><br><br><br><br><br><br><br>
+                <span class="sp2">Seamlessly connect all the OnePlus products to one another for a smart and smooth
+                    experience.</span> <br>
+                <span class="sp3">At ₹109 997* Incl. Bank Discount</span><br><br>
+                <button type="submit" class="bt4">Buy Now</button>
+            </p>
+
+            <img src="img/10005.webp" alt="" id="img4">
+        </div>
+
+        <div id="d11">
+            <p style="font-size: 20px;">Oneplus Featuring
+                <hr><br>
+                <span class="sp5">A new platform that strives to 'Empower the quality of your digital life'. </span>
+                <span class="sp6">Discover more <i class="fa fa-arrow-right fa1" aria-hidden="true"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="d12">
+            <img src="img/10006.jpg" alt="" id="img5">
+
+            <p>Rewrite the Rules <br><span class="sp4">Keyboard 81
+                    Pro</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="sp2">Power by OnePlus Design | Co-Created Switches | The First Bouncy <br>but Durable
+                    Keycap</span><br><br>
+                <button type="submit" class="bt4">Buy Now</button>
+            </p>
+        </div>
+
+        <div class="d12">
+            <p>Ready Before You Were <br><span class="sp4">Built for
+                    5G</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="sp2">#OnePlus5GExperience</span><br><br>
+                <button type="submit" class="bt4">Learn More</button>
+            </p>
+
+            <img src="img/10007.jpg" alt="" id="img6">
+        </div>
+
+        <div class="d12">
+            <img src="img/10008.webp" alt="" id="img5">
+
+            <p><span class="sp4">OnePlus Gear</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="sp2">Do more with OnePlus, the Never Settle way With exclusive <br>OnePlus
+                    Gear</span><br><br>
+                <button type="submit" class="bt4">Learn More</button>
+            </p>
+        </div>
+
+        <div id="d11">
+            <br>
+            <p style="font-size: 20px;">OneTopia
+                <hr><br>
+                <span class="sp5">Relentless innovation defines who we are. OnePlus inspires through innovation. </span>
+                <span class="sp6">Never Settle <i class="fa fa-arrow-right fa1" aria-hidden="true"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="d12">
+            <p><span class="sp4">Evolve your digital
+                    life</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="sp2">Discover how OnePlus empowers you with burdenless <br> technology.</span><br><br>
+                <button type="submit" class="bt4">Learn More</button>
+            </p>
+
+            <img src="img/10009.jpg" alt="" id="img6">
+        </div>
+
+        <div class="d13">
+            <div id="div1">
+                <p><span class="span1">OxygenOS 14</span><br> <span class="span2">Evolved to Exceed</span>
+                    <br><br><br><br><br><br><br><br><br>The signature OxygenOS experience has evolved.
+                    Driven by the next-generation Trinity Engine, innovative features and refreshed design elements,
+                    discover the pinnacle of fast and smooth. <br><br><span class="span3">Learn More</span>
+                </p>
+                <img src="img/10010.jpg" alt="" style="height: 370px; width: 38%; margin-top: 15px;">
+            </div>
+            <div id="div2">
+                <p><span class="span1">Capture Every Horizon</span><br> <span class="span2">2023 OnePlus Photography
+                        Awards Winners</span> <br><br><br><br><br>The 2023 OnePlus Photography Awards is
+                    dedicated to honoring everyone to use their phones to create their own works, to capture wonderful
+                    moments, and to tell the stories behind the lens. <br><br><span class="span3">Learn More</span></p>
+                <img src="img/10011.jpg" alt="" style="height: 370px; width: 45%; margin-top: 15px;">
+
+            </div>
+        </div>
+
+        <div id="d11">
+            <br>
+            <p style="font-size: 20px;">Red Cable Club
+                <hr><br>
+                <span class="sp5">Unlock exclusive benefits, early access to products, and unique experiences. </span>
+                <span class="sp6">Join the Club <i class="fa fa-arrow-right fa1" aria-hidden="true"></i>
+                </span>
+            </p>
+        </div>
+        <div class="d12">
+            <img src="img/10012.webp" alt="" id="img5">
+
+            <p><span class="sp5">One community, <br>limitless
+                    passion</span><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="sp2">United by one common belief - 'Great happens when we're all wired
+                    together'.</span><br><br>
+                <button type="submit" class="bt4">Join Now</button>
+            </p>
+        </div>
+    </section>
+
+    <section id="sc8">
+        <div class="d14">
+            <p>Currently in Community <span style="margin-left: 75%;"> Join Us <span style="color: red;">
+                        +</span></span></p>
+        </div>
+        <hr>
+
+        <div class="d7">
+            <p><span class="sp5">The Power of Community</span><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="sp2">Our biggest community-driven project - Power of Community, has the ambitious goal of
+                    bringing the concept of co-creation to life.</span><br><br>
+                <button type="submit" class="bt3">Learn More</button>
+            </p>
+
+            <img src="img/10013.webp" alt="" id="img7">
+        </div>
+    </section>
+
+    <section id="sc9">
+        <div class="d15">
+            <img src="img/10014.webp" alt="" class="img8"><br>
+            <p>Shot on OnePlus November 2022 - Night... <br><span class="sp2">Welcome to November as we usher in the
+                    Fall season!</span><br> <span class="span4">Read More</span></p>
+
+        </div>
+        <div class="d15">
+            <img src="img/10015.webp" alt="" class="img8"><br>
+            <p>All about OxygenOS - October 2022 <br><span class="sp2">We are very thrilled to share with you that the
+                    OxygenOS FAQs are back!</span><br> <span class="span4">Read More</span></p>
+
+        </div>
+        <div class="d15">
+            <img src="img/10016.webp" alt="" class="img8">
+            <p>[Contest] OnePlus Wiki - Started By Us, Curated By<br><span class="sp2">Welcome to the OnePlus Wiki, a
+                    never-ending OnePlus Museum.</span><br> <span class="span4">Read More</span></p>
+        </div>
+    </section>
+
+    <section id="sc10">
+        <p id="para2">Support</p>
+        <hr><br>
+        <div class="d13">
+            <div id="div3">
+                <p><span class="span1">One-on-One with OnePlus</span><br> <span class="span2">Your personal
+                        helpdesk.</span>
+                    <br><br><br><br><br><br><br><br><br><br>From finding the perfect phone to quickly resolving queries,
+                    we're always ready to help.<br><br><span class="span3">Let's chat</span>
+                </p>
+
+                <img src="img/10017.webp" alt="" style="height: 370px; width: 45%; margin-top: 15px;">
+            </div>
+            <div id="div4">
+                <p><span class="span1">OnePlus Service Center</span><br> <span class="span2">Our technical team is here
+                        to help</span>
+                    <br><br><br><br><br><br><br><br><br><br>We have over 250 authorized service centers across India.
+                    All the fully-trained OnePlus staff are at your service.<br><br><span class="span3">Find nearest
+                        service center</span>
+                </p>
+
+                <img src="img/10018.webp" alt="" style="height: 370px; width: 40%; margin-top: 15px;">
+            </div>
+        </div>
+
+        <div id="d16">
+            <p>Product Help <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            <p>Shopping FAQ <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            <p>Troubleshooting <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            <p>Protection Plan <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+        </div>
+    </section>
+
+    <section id="sc11">
+        <div id="d17">
+            <p>Stay Connected</p>
+            <hr>
+        </div>
+
+        <div id="d18">
+            <img src="img/10019.webp" alt="" id="img9">
+            <p><span class="sp4">Shop With Exclusive Benefits</span><br><br><br><br><br><span class="sp2">Download
+                    OnePlus store app on Google Play</span><br><br>
+                <button class="bt5">Google Play</button>
+            </p>
+        </div>
+
+        <div id="d19">
+            <img src="img/10020.webp" alt="" id="img10">
+            <p><span class="sp4">Always be the first to know.</span><br><span class="sp2">Sign up for our newsletter!
+                    <br><br><br>Subscribe to receive news, promotions and recommendations about OnePlus products and
+                    services from OnePlus, its agencies and <partners class="br"></partners></span><br><br><button
+                    class="bt5">Subscribe Now</button></p>
+        </div>
+
+        <footer id="ft1">
+            <div id="div5">
+                <div id="d20">
+                    <h5>Phones</h5>
+                    <p>OnePlus 11 5G</p>
+                    <p>OnePlus 11R 5G</p>
+                    <p>OnePlus Nord 3 5G</p>
+                    <p>OnePlus Nord CE3 5G</p>
+                    <p>OnePlus Nord CE 3 Lite 5G</p>
+                    <p>OnePlus 10R 5G</p>
+                    <p>OnePlus 10R Pro 5G</p>
+                    <p>OnePlus Nord 2T 5G</p>
+                    <p>OnePlus Nord CE 2 Lite 5G</p>
+                    <p>OnePlus 10T 5G</p>
+                    <p>OnePlus 9 5G</p>
+                    <p>OnePlus 9R 5G</p>
+                </div>
+
+                <div id="d21">
+                    <h5>Store</h5>
+                    <p>Tablet</p>
+                    <p>TV & Display</p>
+                    <p>Audio</p>
+                    <p>Wearables</p>
+                    <p>Cases & Protection</p>
+                    <p>Power & Cables</p>
+                    <p>Bundles</p>
+                    <p>Gear</p>
+                </div>
+
+                <div id="d22">
+                    <h5>Support</h5>
+                    <p>Protection Plan</p>
+                    <p>Shopping FAQs</p>
+                    <p>User Manuals</p>
+                    <p>Service Centers</p>
+                    <p>Affliate Program</p>
+                    <p>Repair Service</p>
+                    <p>Repair Pricing</p>
+                    <p>TV Spare Part Price</p>
+                    <p>Software Update</p>
+                </div>
+
+                <div id="d23">
+                    <h5>Explore</h5>
+                    <p>About OnePlus</p>
+                    <p>Community</p>
+                    <p>Find a Store</p>
+                    <p>OnePlus Store App</p>
+                    <p>OxygenOS</p>
+                    <p>Press</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                    <p>Campus Opportunities</p>
+                </div>
+
+                <div id="d24">
+                    <h5>Programs</h5>
+                    <p>Exchange Program</p>
+                    <p>Red Cable Club</p>
+                </div>
+            </div>
+
+            <div id="d25">
+                <div id="para5">
+                    <p><i class="fa fa-credit-card" aria-hidden="true"></i> Credit Card</p>
+                    <p><i class="fa fa-university" aria-hidden="true"></i> NetBanking</p>
+                    <p><i class="fa fa-pie-chart" aria-hidden="true"></i> EMI</p>
+                    <p><i class="fa fa-google-wallet" aria-hidden="true"></i> Wallet</p>
+                </div>
+                <div id="para6">
+                    <p><i class="fa fa-facebook-official" aria-hidden="true"></i></p>
+                    <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
+                    <p><i class="fa fa-instagram" aria-hidden="true"></i></p>
+                    <p>|</p>
+                    <p>Get Support From OnePlus <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+            </div>
+            <hr>
+
+            <div id="d26">
+                <p>Privacy Policy</p>
+                <p>User Agreement</p>
+                <p>Terms of Sales</p>
+                <p>E-Waste Management</p>
+                <p>Security Feedback</p>
+                <span class="span7">© 2013 - 2023 OnePlus. All Rights Reserved. <img src="img/pr.png" alt=""
+                        height="15px" style="padding-left: 10px;"></span>
+                <span class="span8">India (English) <i class="fa fa-globe" aria-hidden="true"></i></span>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
